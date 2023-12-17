@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.parent {
+  @apply w-full   relative;
+}
+
+.hidden-paragraph {
+  @apply opacity-0  absolute right-20 transition-all duration-500 ease-in-out ;
+}
+
+.parent:hover .hidden-paragraph {
+  @apply opacity-100 block right-2 ;
+}
