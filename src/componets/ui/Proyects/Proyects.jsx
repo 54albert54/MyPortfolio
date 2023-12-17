@@ -1,16 +1,13 @@
 
 
 import { useState } from "react"
-import { TCode, TRepositorio } from "../../const/data"
+
 import { useLandingContext } from "../../providers/useLandingContext"
 
 
-type Props ={
-  item:TRepositorio
-  isHover?:boolean
-}
 
-export default function ProyectsCards ({item}:Props){
+
+export default function ProyectsCards ({item}){
  const [isHover , setIsHover] = useState(false)
   
 
@@ -35,7 +32,7 @@ export default function ProyectsCards ({item}:Props){
   )
 }
 
-const ProyecCarsdHover = ({item , isHover , className}:Props)=>{
+const ProyecCarsdHover = ({item , isHover })=>{
   const { showMoProyect }= useLandingContext()
   
   return(
@@ -48,9 +45,7 @@ const ProyecCarsdHover = ({item , isHover , className}:Props)=>{
   </div>
 )}
 
-export const ShowCode = ({codeList ,className}:{
-  className?:string
-  codeList:TCode[]})=>(
+export const ShowCode = ({codeList ,className})=>(
   <ul className="flex flex-row gap-3 my-2">
   {
     codeList?.map((code , index)=>(

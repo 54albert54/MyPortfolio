@@ -1,7 +1,7 @@
 import { useLandingContext } from "../../providers/useLandingContext";
 
 import { IoGitNetwork, IoClose ,  } from "react-icons/io5";
-import { TRepositorio } from "../../const/data";
+
 import { ShowCode } from "../Proyects/Proyects";
 import { TbWorldWww } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
@@ -18,7 +18,7 @@ export const ProyecCarsdCover = ()=>{
 //onClick={()=> console.log(proyectsToShow)}
 export const ProyecCarsdDectail = ()=>{
   const { showProyect , hiddeMoProyect , proyectsToShow  }= useLandingContext()
-  const data = proyectsToShow as TRepositorio 
+  const data = proyectsToShow 
   return(
 <section  className={`fixed w-[430px] h-screen px-6 flex flex-col gap-y-6 ${showProyect?'left-0':'left-[-430px]'}  transition-all duration-900 ease-in  z-20 `}
  style={{
@@ -57,7 +57,7 @@ const ShowAbout = ({text})=>(
   {text}
   </p>
 )
-const ShowLinks = ({data}:{data:TRepositorio})=>(
+const ShowLinks = ({data})=>(
   <div className="flex flex-col gap-4 py-5 pl-6">
     <div>
       <div className="flex flex-row items-center gap-x-3 text-gray-100  mb-2">

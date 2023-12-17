@@ -1,14 +1,11 @@
 import SectionWrapper from "../../SectionWrapper"
-import NavLink from "../NavLink"
-const ctaImage = `https://phantom-elmundo.unidadeditorial.es/0d47e36cc1f95d92ce86ee41c0cc6757/resize/473/f/webp/assets/multimedia/imagenes/2023/08/01/16908932497284.jpg`
 
-import imgFondo from '../../../assets/playa.webp'
 import { useLandingContext } from "../../providers/useLandingContext"
-import { TRepositorio } from "../../const/data"
+
 
 const CTA = () => {
   const { mainProyect , showMoProyect  }= useLandingContext()
-  const data:TRepositorio = mainProyect
+  const data = mainProyect
   return (
     <SectionWrapper id="cta" className="pb-0">
       <div className=" pb-12">

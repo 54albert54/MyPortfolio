@@ -3,27 +3,9 @@
 import { memoryImg, podedex, rocklegend } from "../../assets/porfolio"
 
 
-export type TRepositorio ={
-  
-    title:string
-    img:string
-    code:TCode[]
-    about:string
-    repoLink:string
-    pageLink:string
-  
-}
 
-export type TCode = "HTML" | 'JavaScript' | 'CSS' | 'TypeScrip' | 'REACT' | 'MYSQUL'
-export type TPaletCaolores ={
-  primary:string
-  primaryHover:string
-  second:string
-  backGround:string
-  actions:string
-  actionHover:string
-}
-export const paletaColores:TPaletCaolores={
+
+export const paletaColores={
   primary:'#8A50E9',
   primaryHover:'#FEB8FF',
   second:'#4B4453',
@@ -33,7 +15,7 @@ export const paletaColores:TPaletCaolores={
 
 }
 
- const allRepo:TRepositorio[] = []
+ const allRepo = []
 
 
 allRepo.push({
