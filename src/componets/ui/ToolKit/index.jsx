@@ -86,15 +86,15 @@ const ToolKit = () => {
 									</p>
 							</div>
 							<div className="mt-12">
-									<ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+									<ul className="grid gap-y-8 gap-x-12 grid-cols-2 lg:grid-cols-3">
 											{
 													features.map((item, idx) => (
-															<li key={idx} className="relative h-36 flex  gap-x-4 items-center shadow-xl justify-center  gradient-border rounded-lg">
-																	<div className="flex-none w-12 h-12    flex items-center justify-center">
+															<li key={idx} className="relative sm:h-36 flex flex-col  gap-x-4 items-center shadow-xl gap-1 justify-center  gradient-border rounded-lg">
+																	<div className="flex-none w-12 h-12    ">
 																			<img src={item.icon} alt={item.title} />
 																	</div>
 																	<div>
-																			<h4 className="text-lg absolute text-gray-800 font-semibold">
+																			<h4 className="text-lg sm:mt-4 text-gray-800 font-semibold">
 																				{item.title}
 																			</h4>
 																			<p className="mt-3">

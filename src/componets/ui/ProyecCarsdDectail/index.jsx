@@ -20,7 +20,7 @@ export const ProyecCarsdDectail = ()=>{
   const { showProyect , hiddeMoProyect , proyectsToShow  }= useLandingContext()
   const data = proyectsToShow 
   return(
-<section  className={`fixed w-[430px] h-screen px-6 flex flex-col gap-y-6 ${showProyect?'left-0':'left-[-430px]'}  transition-all duration-900 ease-in  z-20 `}
+<section  className={`fixed w-[430px] h-[930px] sm:h-screen px-6 flex flex-col gap-y-6 ${showProyect?'left-0':'left-[-430px]'}  transition-all duration-900 ease-in  z-20 `}
  style={{
   background:
       "linear-gradient(202.72deg, #251a38 14.76%, #342d3e 34.37%, #28252b 86.62%)",
@@ -36,7 +36,7 @@ export const ProyecCarsdDectail = ()=>{
        </div>
        <section className=" flex flex-col gap-y-12 pt-2">
         <h3 className="w-full flex justify-center text-gray-100 font-bold text-xl">{data?.title} </h3>
-        <figure className=" w-full h-[300px]">
+        <figure className=" w-full h-[200px] sm:h-[300px]">
         <img className="w-full h-full rounded-xl shadow-md object-cover " src={data?.img} alt={data?.title} />
         </figure>
         <div className=" flex flex-col gap-y-3 pt-8 border border-transparent  border-b-gray-900">
@@ -53,7 +53,7 @@ export const ProyecCarsdDectail = ()=>{
   )
 }
 const ShowAbout = ({text})=>(
-  <p  className=" border-gray-900 rounded-lg w-full h-[200px] text-gray-100  shadowz-lg p-3 overflow-auto  border border-tzransparent  border-b-gray-900">
+  <p  className=" border-gray-900 rounded-lg w-full h-[100px] sm:h-[200px] text-gray-100  shadowz-lg p-3 overflow-auto  border border-tzransparent  border-b-gray-900">
   {text}
   </p>
 )

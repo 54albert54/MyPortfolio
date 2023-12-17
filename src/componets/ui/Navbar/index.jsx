@@ -33,7 +33,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <nav className={`bg-white w-screen max-w-[1440px] mx-auto  md:static md:text-sm ${state ? "fixed z-10 h-full" : ""}`}>
+            <nav className={`bg-white shadow-lg sm:shadow-none px-6 top-0  w-screen max-w-[1440px] mx-auto  md:static md:text-sm ${state ? "fixed z-10 h-full" : "fixed z-10"}`}>
                 <div className="custom-screen items-center mx-auto md:flex">
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Brand />
