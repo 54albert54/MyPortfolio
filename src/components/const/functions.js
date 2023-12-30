@@ -1,8 +1,4 @@
-import { Resend } from "resend";
 
-const emailKey = import.meta.env.VITE_EMAIL_KEY;
-
-const resend = new Resend(emailKey);
 
 export const sendEmail = (data) => {
   const dataEmail = {
@@ -12,7 +8,7 @@ export const sendEmail = (data) => {
     html: `<p> correo departe <br/>${data.name} <br/> correo:${data.emailaddress} <br/><br/> <strong>${data.emailaddress}</strong>!</p>`,
   };
  
-console.log('se envio email',resend);
+console.log('se envio email',dataEmail);
 
- resend.emails.send(dataEmail);
+ 
 };
