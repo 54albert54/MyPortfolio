@@ -11,11 +11,11 @@ export default function ProjectsCards({ item }) {
       <section
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
-        className="w-[380px] mx-auto  relative bg-dark/25  h-[360px] z-0  flex flex-col gap-2 items-center overflow-hidden  shadow-xl pt-8 justify-between  gradient-border rounded-[22px]"
+        className="w-[340px] mx-auto  relative bg-dark/25  h-[360px] z-0  flex flex-col gap-2 items-center overflow-hidden  shadow-xl pt-8 justify-between  gradient-border rounded-[22px]"
       >
         <div className="flex-none w-auto h-auto   flex items-center justify-center">
           <img
-            className="w-full h-[150px] "
+            className="w-auto h-[150px] "
             src={item?.img}
             alt={item?.title}
           />
@@ -32,7 +32,7 @@ export default function ProjectsCards({ item }) {
 
 const ProjectCardHover = ({ item, isHover }) => {
   const navigation = useNavigate()
-  
+
   const goToProject = ()=>{
     window.scrollTo({ top: 0 })
     navigation('/Project',{

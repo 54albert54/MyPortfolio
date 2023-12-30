@@ -10,18 +10,18 @@ const CTA = () => {
     <SectionWrapper id="cta" className="pb-0">
       <div className=" pb-12">
         <div className="items-center   gap-x-12 lg:flex">
-          <figure className="flex-1  sm:hidden lg:block">
+          <figure className="flex-1  sm:w-screen lg:block">
             <img
               src={data?.img}
               className=" w-4/6 rounded-lg md:max-w-lg mx-auto border-md"
               alt="the last projects"
             />
           </figure>
-          <div className="max-w-xl mt-6 md:mt-0 lg:max-w-2xl">
+          <div className=" mx-auto mt-6 md:mt-auto  lg:max-w-2xl">
             <h2 className="text-gray-800 text-3xl font-semibold w-full text-center sm:text-4xl">
               {data?.title}
             </h2>
-            <p className="mt-3 sm:w-[80%] mb-12 text-center w-full text-gray-600">{data?.about}</p>
+            <p className="mt-3 mx-auto sm:w-[80%] mb-12 text-center w-full text-gray-600">{data?.about}</p>
 
             <div className=" w-full text-center rounded-lg duration-150 inline-block mt-4    ">
               <Link

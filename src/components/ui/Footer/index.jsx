@@ -13,7 +13,7 @@ const socialInfo = [
 
 const Footer = () => (
     <footer>
-      <div className="custom-screen pt-16 w-screen mx-auto max-w-[1440px]">
+      <div className="custom-screen pt-16 w-screen mx-auto max-w-[1440px] pl-8">
         <div className="mt-10 py-10 border-t items-center justify-between sm:flex">
           <p className="text-gray-600">{new Date().getFullYear()} &copy; All rights Reserved</p>
           <div className="flex items-center gap-x-6 text-gray-400 mt-6">

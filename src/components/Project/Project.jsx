@@ -35,7 +35,7 @@ const Project = () => {
             </Link>
             <Link
               target="_blank"
-              className="border-lights min-w-8 bg-buttonColor text-light border-2 border-dark  px-4 py-2 rounded-3xl active:transform hover:bg-blue-400 transition-all duration-150 ease-in "
+              className="border-lights min-w-8 bg-buttonColor text-light border-2 border-buttonColor  px-4 py-2 rounded-3xl active:transform hover:bg-blue-400 transition-all duration-150 ease-in "
               to={project?.repoLink}
             >
               Git

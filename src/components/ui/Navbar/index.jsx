@@ -51,7 +51,7 @@ const Navbar = () => {
             />
             <SocialLinks
               classMobile="w-12 h-12"
-              className={`absolute left-6 gap-20 top-[680px] w-auto flex items-center justify-evenly  `}
+              className={`absolute left-12 gap-20 top-[480px] w-auto flex items-center justify-evenly  `}
             />
           </section>
         )}
